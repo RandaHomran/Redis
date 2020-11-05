@@ -38,9 +38,9 @@ public class UserController {
 	@PutMapping("/update")
 	@ResponseBody
 	@CachePut(value = "users", key = "#user.id")
-    public User updateItem(@RequestBody User user){
+	public User updateItem(@RequestBody User user){
 		return userService.updateUser(user);
-    }
+	}
 
 	@DeleteMapping("/delete/{id}")
 	@ResponseBody
