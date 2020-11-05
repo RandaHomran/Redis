@@ -19,7 +19,6 @@ public class UserService {
 	}
 	
 	public User getUserById(String id) {
-		System.out.println("get user from database");
 		return userRepository.findById(id);
 	}
 	
